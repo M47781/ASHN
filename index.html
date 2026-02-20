@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ASHN Fashion | أزياء راقية</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Poppins:wght@300;400;600&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+:root{
+  --gold:#f2c46d;
+  --gold-glow:rgba(242,196,109,0.4);
+  --white:#fff;
+  /* Colors for Social Media */
+  --whatsapp: #25D366;
+  --facebook: #1877F2;
+  --instagram: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  --phone: #4caf50;
+  --email: #ea4335;
+}
+
+body{
+  min-height:100vh;
+  font-family:'Amiri', serif;
+  background:linear-gradient(-45deg,#000,#0f0f0f,#2a2108,#000);
+  background-size:400% 400%;
+  animation:bgMove 15s ease infinite;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+  color:var(--white);
+  overflow-x:hidden;
+}
+
+@keyframes bgMove{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+.container{
+  max-width:480px;
+  width:100%;
+  padding:30px 20px;
+  border-radius:30px;
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(25px);
+  -webkit-backdrop-filter:blur(25px);
+  border:1px solid rgba(242,196,109,0.3);
+  box-shadow:0 0 50px rgba(0,0,0,0.5);
+  text-align:center;
+}
+
+.logo{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  border:2px solid var(--gold);
+  margin:0 auto 15px auto;
+  box-shadow: 0 0 15px var(--gold-glow);
+  object-fit: cover;
+}
+
+h1{
+  font-family:'Cinzel', serif;
+  background:linear-gradient(135deg,#8a6a2a,#f2c46d,#fff1c9);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+  font-size:28px;
+  margin-bottom:10px;
+}
+
+.bio{
+  color:#ddd;
+  font-size:16px;
+  line-height:1.8;
+  margin-bottom:20px;
+}
+
+/* ===== CAROUSEL ===== */
+.carousel-container{
+  width:100%;
+  height:240px;
+  overflow:hidden;
+  margin:20px 0;
+  border-radius:20px;
+  border:1px solid rgba(242,196,109,0.3);
+  position:relative;
+}
+
+.carousel-track{
+  display:flex;
+  gap:12px;
+  width:max-content;
+  animation:scroll 25s linear infinite;
+}
+
+.carousel-track img{
+  height:240px;
+  width:160px;
+  border-radius:15px;
+  object-fit:cover;
+  transition:.4s;
+}
+
+@keyframes scroll{
+  0%{transform: translateX(0);}
+  100%{transform: translateX(700px);} /* Modified for RTL flow */
+}
+
+/* ===== BUTTONS MODIFIED ===== */
+.btn{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:15px;
+  margin:14px 0;
+  padding:15px;
+  border-radius:15px;
+  text-decoration:none;
+  font-size:17px;
+  font-weight: 600;
+  color:var(--white);
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.btn i {
+  font-size: 22px;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.02);
+  border-color: var(--gold);
+}
+
+.btn:hover i {
+  transform: scale(1.2);
+}
+
+/* Colorful Icons Styles */
+.whatsapp i { color: var(--whatsapp); }
+.phone i { color: var(--gold); }
+.email i { color: #ff5e5e; }
+.facebook i { color: var(--facebook); }
+
+/* Instagram Gradient Icon Fix */
+.instagram i {
+  background: var(--instagram);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+#footer{
+  color: var(--gold);
+  font-size:12px;
+  margin-top:25px;
+  opacity: 0.8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="https://res.cloudinary.com/dv664dogt/image/upload/v1771623097/photo_5818965376916721118_x_1_wnpn8b.png" class="logo" alt="ASHN Fashion Logo">
+
+<h1>ASHN Fashion</h1>
+
+<p class="bio">
+تصاميم تلامس الروح ✨<br>
+<b>قفطان • فساتين سهرة • تفصيل خاص</b><br>
+التوصيل متاح لـ 58 ولاية
+</p>
+
+<div class="carousel-container">
+<div class="carousel-track">
+<img src="https://res.cloudinary.com/dv664dogt/image/upload/v1771623097/photo_5818965376916721115_y_s2ksrl.jpg">
+<img src="https://res.cloudinary.com/dv664dogt/image/upload/v1771623097/photo_5818965376916721113_y_yfvwho.jpg">
+<img src="https://res.cloudinary.com/dv664dogt/image/upload/v1771623096/photo_5818965376916721114_y_hrklo9.jpg">
+<img src="https://res.cloudinary.com/dv664dogt/image/upload/v1771623096/photo_5818965376916721112_y_stq0zy.jpg">
+</div>
+</div>
+
+<a class="btn whatsapp" href="https://wa.me/213676624754" target="_blank">
+<i class="fa-brands fa-whatsapp"></i> تواصل معنا عبر واتساب
+</a>
+
+<a class="btn instagram" href="https://www.instagram.com/ashn2525" target="_blank">
+<i class="fa-brands fa-instagram"></i> تابعنا على إنستغرام
+</a>
+
+<a class="btn facebook" href="https://www.facebook.com/share/1aAbw2hE8A/" target="_blank">
+<i class="fa-brands fa-facebook-f"></i> صفحتنا على فيسبوك
+</a>
+
+<a class="btn phone" href="tel:0676624754">
+<i class="fa-solid fa-phone"></i> اتصل بنا مباشرة
+</a>
+
+<a class="btn email" href="mailto:assiahayoun429@gmail.com">
+<i class="fa-solid fa-envelope"></i> المراسلة البريدية
+</a>
+
+<p id="footer">
+ASHN FASHION • فخامة جزائرية • 2026
+</p>
+
+</div>
+
+</body>
+</html>
